@@ -1,0 +1,8 @@
+apiVersion: snapshot.storage.k8s.io/v1beta1
+kind: VolumeSnapshot
+metadata:
+  name: postgres
+spec:
+  volumeSnapshotClassName: okteto-snapshot-class
+  source:
+    persistentVolumeClaimName: pvc-postgres-0

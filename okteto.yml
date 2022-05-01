@@ -1,0 +1,9 @@
+---
+name: proxy
+autocreate: true
+image: alpine
+workdir: "/root"
+forward:
+  - 5432:postgres:5432
+persistentVolume:
+  enabled: false
