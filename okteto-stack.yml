@@ -9,4 +9,8 @@ services:
     ports:
       - 5432
     volumes:
-      - /var/lib/postgresql/data/
+      - pgdata:/var/lib/postgresql/data/
+volumes:
+  pgdata:
+    driver_opts:
+      class: csi-okteto-standard

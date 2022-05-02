@@ -5,4 +5,4 @@ metadata:
 spec:
   volumeSnapshotClassName: okteto-snapshot-class
   source:
-    persistentVolumeClaimName: pvc-postgres-0
+    persistentVolumeClaimName: pgdata
